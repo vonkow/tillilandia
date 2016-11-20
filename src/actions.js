@@ -9,11 +9,12 @@ export default class Actions {
   }
 
   getAllTillys () {
-    fetch('/api/tillandsias/').then(res => res.json()).then(data => {
-      console.log(data)
-      data.results.map(tilly => this.state.tillys.push(tilly))
-      console.log(this.state.tillys[0])
-
+    fetch('/api/tillandsias/')
+    .then(res => res.json())
+    .then(data => {
+      data.results.map(tilly => 
+        this.state.tillys.push(tilly)
+      )
     })
   }
 
