@@ -4,3 +4,4 @@ dist
 db.sqlite3
 yarn.lock
 media
+.sass-cache
