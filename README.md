@@ -13,7 +13,7 @@ but also help out people who want to get started with Django and/or React.
 ### Prereqs
 
 You'll need python3 and virtualenv installed for the django end of things,
-for the javascript stuff you'll need node.js and npm.
+for the javascript stuff you'll need node.js and npm. Oh, and sass, too.
 
 ### Instructions
 
