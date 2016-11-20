@@ -1,0 +1,4 @@
+* Move config data to .env, especially sensitive stuff.
+* Incorporate collectstatic properly into the workflow.
+* Maybe vagrantify the project and use postgres and uwsgi to show people how to
+* Create a script for packaging everything up with docker for fun

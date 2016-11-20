@@ -1,0 +1,6 @@
+*.pyc
+node_modules
+dist
+db.sqlite3
+yarn.lock
+media
