@@ -23,7 +23,6 @@ Activate your virtualenv and then do the following:
 * `npm install` (or `yarn install`, if you're into that)
 * `./manage.py migrate`
 * `./manage.py createsuperuser`
-* `webpack`
-* `./manage.py runserver`
+* `npm run dev` (or `yarn run dev`)
 
 and you should have a local copy up and running at `http://localhost:8000/`

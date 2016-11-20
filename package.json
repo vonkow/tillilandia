@@ -2,6 +2,11 @@
   "name": "tillilandia",
   "version": "1.0.0",
   "main": "src/index.js",
+  "scripts": {
+    "dev": "sass --watch ./sass:./dist/css & webpack --watch & ./manage.py runserver",
+    "sass": "sass --watch ./sass:./dist/css",
+    "webpack": "webpack --watch"
+  },
   "author": "Caz",
   "license": "MIT",
   "dependencies": {
