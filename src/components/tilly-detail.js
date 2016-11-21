@@ -6,11 +6,17 @@ import {find} from 'lodash'
 export default class TillyCard extends React.Component {
 
   render () {
+    // TODO get if not existant and back button
     const tilly = find(this.props.state.tillys, {
       id: this.props.params.id
     })
     return (
-      <h1>{tilly.name}</h1>
+      <div className="tilly-detail everything">
+        <h1>{tilly.name}</h1>
+        <h2>{tilly.species}</h2>
+        <p>{tilly.description}</p>
+        <img src={tilly.pics[0].image}/>
+      </div>
     )
   }
 

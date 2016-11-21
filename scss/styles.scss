@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5 {
 
 .everything {
   margin: 0 auto;
+  overflow: hidden;
 }
 
 h1 {
@@ -60,6 +61,12 @@ h1 {
       //-webkit-filter: none;
               //filter: none;
     }
+  }
+}
+
+.tilly-detail {
+  img {
+    width: 100%;
   }
 }
 

@@ -8,7 +8,7 @@ class SpeciesSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Species
-        fields = ('id', 'name',)
+        fields = ('id', 'name', 'create_date', 'update_date')
 
 
 class TillyPicSerializer(serializers.ModelSerializer):
@@ -26,4 +26,7 @@ class TillandsiaSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Tillandsia
-        fields = ('id', 'name', 'species', 'description', 'pics')
+        fields = (
+            'id', 'create_date', 'update_date',
+            'name', 'species', 'description', 'pics'
+        )
