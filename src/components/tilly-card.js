@@ -6,14 +6,20 @@ export default class TillyCard extends React.Component {
 
   render () {
     const {tilly} = this.props
-    let pic = null
+    let image = null,
+        className = ''
     if (tilly.pics.length) {
-      pic = <img className="tilly-thumb" src={tilly.pics[0].image}/>
+      image = tilly.pics[0]
+      if (image.height > image.width) {
+        className = 'portrait'
+      }
     }
     return (
-      <div>
-        <h2>{tilly.name}</h2>
-        {pic}
+      <div className="tilly-thumb">
+        <div className="thumbnail">
+          <img src={image.image} className={className}/>
+          <h4>{tilly.name}</h4>
+        </div>
       </div>
     )
   }

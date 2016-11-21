@@ -6,7 +6,9 @@ export default class Header extends React.Component {
 
   render () {
     return (
-      <h1>Am the header</h1>
+      <header>
+        <h1>Tillandia</h1>
+      </header>
     )
   }
 

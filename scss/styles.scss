@@ -1,3 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+
+.everything {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.listy {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .tilly-thumb {
-  height: 100px;
+  float: left;
+  h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0.5em 0 0 0;
+    padding: 0.625em 1em 0.375em 1em;
+    color: white;
+    background: rgba(0,0,0,0.4);
+  }
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    &.portrait {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media all and (min-width: 961px) {
+  .everything {
+    width: 60em;
+  }
+  .thumbnail {
+    width: 15em;
+    height: 15em;
+  }
+}
+
+@media all and (min-width: 641px) and (max-width: 960px) {
+  .everything {
+    width: 40em;
+  }
+  .thumbnail {
+    width: 13.333em;
+    height: 13.333em;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 640px) {
+  .everything {
+    width: 30em;
+  }
+  .thumbnail {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .everything {
+    width: 20em;
+  }
+  .thumbnail {
+    width: 10em;
+    height: 10em;
+  }
 }

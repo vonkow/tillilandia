@@ -14,12 +14,14 @@ export default class Index extends React.Component {
     const tillys = state.tillys.map(tilly => 
       <TillyCard tilly={tilly} key={tilly.id}/>
     )
+    //<p>AM Index</p>
+    //<p>{state.foo}</p>
+    //<button onClick={this.setFooToBaz.bind(this)}>BAZify foo</button>
     return (
       <div className="index">
-        <p>AM Index</p>
-        <p>{state.foo}</p>
-        <button onClick={this.setFooToBaz.bind(this)}>BAZify foo</button>
-        {tillys}
+        <div className="listy">
+          {tillys}
+        </div>
       </div>
     )
   }
