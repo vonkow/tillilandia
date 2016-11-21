@@ -20,6 +20,7 @@
     "eslint-config-airbnb": "^13.0.0",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-react": "^6.6.0",
+    "lodash": "^4.17.2",
     "mobx": "^2.6.3",
     "mobx-react": "^3.5.9",
     "react": "^15.3.2",

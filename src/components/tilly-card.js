@@ -1,5 +1,6 @@
 import React from 'react'
 import {observer} from 'mobx-react'
+import {Link} from 'react-router'
 
 @observer(['actions', 'state'])
 export default class TillyCard extends React.Component {
@@ -16,10 +17,12 @@ export default class TillyCard extends React.Component {
     }
     return (
       <div className="tilly-thumb">
-        <div className="thumbnail">
-          <img src={image.image} className={className}/>
-          <h4>{tilly.name}</h4>
-        </div>
+        <Link to={`/tilly/${tilly.id}`}>
+          <div className="thumbnail">
+            <img src={image.image} className={className}/>
+            <h4>{tilly.name}</h4>
+          </div>
+        </Link>
       </div>
     )
   }
