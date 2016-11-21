@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4em;
+  margin: 0.5em 0em;
 }
 
 .listy {
@@ -49,9 +50,15 @@ h1 {
     -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
+    //-webkit-filter: grayscale(100%);
+            //filter: grayscale(100%);
     &.portrait {
       width: 100%;
       height: auto;
+    }
+    &:hover {
+      //-webkit-filter: none;
+              //filter: none;
     }
   }
 }
@@ -66,13 +73,23 @@ h1 {
   }
 }
 
-@media all and (min-width: 641px) and (max-width: 960px) {
+@media all and (min-width: 721px) and (max-width: 960px) {
   .everything {
-    width: 40em;
+    width: 45em;
   }
   .thumbnail {
-    width: 13.333em;
-    height: 13.333em;
+    width: 15em;
+    height: 15em;
+  }
+}
+
+@media all and (min-width: 641px) and (max-width: 720px) {
+  .everything {
+    width: 36em;
+  }
+  .thumbnail {
+    width: 12em;
+    height: 12em;
   }
 }
 
@@ -81,8 +98,8 @@ h1 {
     width: 30em;
   }
   .thumbnail {
-    width: 10em;
-    height: 10em;
+    width: 15em;
+    height: 15em;
   }
 }
 
