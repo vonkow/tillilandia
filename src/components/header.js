@@ -1,5 +1,6 @@
 import React from 'react'
 import {observer} from 'mobx-react'
+import {Link} from 'react-router'
 
 @observer(['actions', 'state'])
 export default class Header extends React.Component {
@@ -8,6 +9,11 @@ export default class Header extends React.Component {
     return (
       <header>
         <h1>Tillandsias</h1>
+        <h3>
+          <Link to="about">
+            What?
+          </Link>
+        </h3>
       </header>
     )
   }
