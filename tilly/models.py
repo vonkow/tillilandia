@@ -20,6 +20,9 @@ class BaseModel(models.Model):
 class Species(BaseModel):
     name = models.CharField(max_length=255)
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self):
         return self.name
 
@@ -28,6 +31,9 @@ class Tillandsia(BaseModel):
     name = models.CharField(max_length=255)
     species = models.ForeignKey(Species, null=True, blank=True)
     description = models.TextField(default='')
+
+    class Meta:
+        ordering = ['name']
 
     def __str__(self):
         return self.name

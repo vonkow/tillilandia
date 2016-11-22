@@ -12,8 +12,10 @@ export default class TillyCard extends React.Component {
     })
     return (
       <div className="tilly-detail everything">
-        <h1>{tilly.name}</h1>
-        <h2>{tilly.species}</h2>
+        <div className="detail-header">
+          <h2>{tilly.name}</h2>
+          <h3>T. {tilly.species}</h3>
+        </div>
         <p>{tilly.description}</p>
         <img src={tilly.pics[0].image}/>
       </div>
