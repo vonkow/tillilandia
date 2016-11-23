@@ -34,7 +34,7 @@ export default class AboutSite extends React.Component {
           Not only is this site a useful resource for me to remember which of my
           tillys are which, it's also a pretty good example of what I do for a 
           living. It's built using Django and React, with the help of Django REST
-          Framework and MobX. You can take a look at the source code on &nbsp;
+          Framework and MobX. You can take a look at the source code on 
           <a href="https://github.com/vonkow/tillilandia">github</a>; if you're
           interested in learning Django and/or React, there are worse places to
           start.
