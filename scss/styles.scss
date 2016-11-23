@@ -105,15 +105,9 @@ h1 {
     -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
-    //-webkit-filter: grayscale(100%);
-            //filter: grayscale(100%);
     &.portrait {
       width: 100%;
       height: auto;
-    }
-    &:hover {
-      //-webkit-filter: none;
-              //filter: none;
     }
   }
 }
@@ -125,63 +119,67 @@ h1 {
     justify-content: space-between;
     align-items: baseline;
   }
-  h2 {
-  }
-  h3 {
-  }
-  p {
-  }
-  img {
+  .img-wrap {
     width: 100%;
+    img {
+      width: 100%;
+    }
   }
+}
+
+.thumbnail {
+  width: 15rem;
+  height: 15rem;
 }
 
 @media all and (min-width: 961px) {
   .everything {
     width: 60rem;
   }
-  .thumbnail {
-    width: 15rem;
-    height: 15rem;
-  }
+  //.thumbnail {
+    //width: 15rem;
+    //height: 15rem;
+  //}
 }
 
+/*
 @media all and (min-width: 721px) and (max-width: 960px) {
   .everything {
     width: 45rem;
   }
-  .thumbnail {
-    width: 15rem;
-    height: 15rem;
-  }
+  //.thumbnail {
+    //width: 15rem;
+    //height: 15rem;
+  //}
 }
 
 @media all and (min-width: 641px) and (max-width: 720px) {
   .everything {
     width: 36rem;
   }
-  .thumbnail {
-    width: 12rem;
-    height: 12rem;
-  }
+  //.thumbnail {
+    //width: 12rem;
+    //height: 12rem;
+  //}
 }
 
 @media all and (min-width: 481px) and (max-width: 640px) {
   .everything {
     width: 30rem;
   }
-  .thumbnail {
-    width: 15rem;
-    height: 15rem;
-  }
+  //.thumbnail {
+    //width: 15rem;
+    //height: 15rem;
+  //}
 }
 
 @media all and (min-width: 321px) and (max-width: 480px) {
   .everything {
     width: 20rem;
   }
-  .thumbnail {
-    width: 10rem;
-    height: 10rem;
-  }
+  //.thumbnail {
+    //width: 10rem;
+    //height: 10rem;
+  //}
 }
+*/

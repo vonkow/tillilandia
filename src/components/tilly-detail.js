@@ -20,7 +20,9 @@ export default class TillyCard extends React.Component {
             <h3>T. {tilly.species}</h3>
           </div>
           <p>{tilly.description}</p>
-          <img src={tilly.pics[0].image}/>
+          <div className="img-wrap">
+            <img src={tilly.pics[0].image}/>
+          </div>
         </div>
       )
     }
