@@ -21,7 +21,10 @@ Activate your virtualenv and then do the following:
 
 * `pip install -r requirements.txt`
 * `npm install` (or `yarn install`, if you're into that)
-* Create a file called `.env` and add `SECRET_KEY=some-long-random-string` to it
+* Create a file called `.env` and add ```
+SECRET_KEY=some-long-random-string
+DEV=True
+``` to it
 * `./manage.py migrate`
 * `./manage.py createsuperuser`
 * `npm run dev` (or `yarn run dev`)
