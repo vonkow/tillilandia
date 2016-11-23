@@ -4,10 +4,6 @@ export default class Actions {
     this.state = state
   }
 
-  setFoo (val) {
-    this.state.foo = val
-  }
-
   getAllTillys () {
     fetch('/api/tillandsias/')
     .then(res => res.json())
