@@ -120,9 +120,8 @@ h1 {
     align-items: baseline;
   }
   .img-wrap {
-    width: 60em;
     img {
-      width: 60em;
+      width: 100%;
     }
   }
 }
@@ -132,54 +131,40 @@ h1 {
   height: 15em;
 }
 
-@media all and (min-width: 961px) {
+@media all and (min-width: 1152px) {
   .everything {
     width: 60em;
   }
-  //.thumbnail {
-    //width: 15em;
-    //height: 15em;
-  //}
 }
 
-/*
-@media all and (min-width: 721px) and (max-width: 960px) {
+@media all and (min-width: 721px) and (max-width: 1151px) {
   .everything {
     width: 45em;
   }
-  //.thumbnail {
-    //width: 15em;
-    //height: 15em;
-  //}
 }
 
 @media all and (min-width: 641px) and (max-width: 720px) {
   .everything {
     width: 36em;
   }
-  //.thumbnail {
-    //width: 12em;
-    //height: 12em;
-  //}
+  .thumbnail {
+    width: 12em;
+    height: 12em;
+  }
 }
 
 @media all and (min-width: 481px) and (max-width: 640px) {
   .everything {
     width: 30em;
   }
-  //.thumbnail {
-    //width: 15em;
-    //height: 15em;
-  //}
 }
 
 @media all and (min-width: 321px) and (max-width: 480px) {
   .everything {
     width: 20em;
   }
-  //.thumbnail {
-    //width: 10em;
-    //height: 10em;
-  //}
+  .thumbnail {
+    width: 10em;
+    height: 10em;
+  }
 }
-*/
