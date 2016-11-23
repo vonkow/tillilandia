@@ -10,8 +10,9 @@ export default class About extends React.Component {
         <h2>What's this?</h2>
         <p>
           Yours truly (Caz) accidentally started collecting Tillandsias, or
-          Air Plants, around the end of 2015. Since I have too many to keep
-          track of in my head, I decided to make a site to catalog them. 
+          Air Plants, at the end of 2015. Since I have too many to keep track 
+          of in my head (seriously, I have over 50), I decided to make a site 
+          to catalog them. 
         </p>
         <p>
           Native to central and south america (plus a few of the southern US 
@@ -25,9 +26,9 @@ export default class About extends React.Component {
           that sell plants in the Seattle area. In cases where I can recall
           where I acquired a specific tilly, I'll make note of it. I've also
           become involved with the Volunteer Park Conservatory, volunteering at
-          the Gift Shop most Sundays and occasionally begging the gardeners for
-          offsets of some of their rarer tillandsia varieties. If you're ever in
-          Seattle, I highly recommend a visit, especailly when it's gloomy out.
+          the Gift Shop most weeks and occasionally begging the gardeners for
+          offsets of some of their rarer varieties. If you're ever in Seattle,
+          I highly recommend a visit, especially when it's gloomy out.
         </p>
         <p>
           Not only is this site a useful resource for me to remember which of my
