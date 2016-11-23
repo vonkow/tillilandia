@@ -23,6 +23,7 @@ actions.getAllTillys()
 
 render(
   <Router
+    onUpdate={() => window.scrollTo(0, 0)}
     history={hashHistory}
     render={createElement}
     routes={createRoutes()}
