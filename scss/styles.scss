@@ -14,7 +14,7 @@ $mq-xlarge: "(min-width: #{$bp-xlarge})";
 $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 // Font-Size
-$base-font-size: 1em;
+$base-font-size: 1rem;
 // Line-Height
 $base-line-height: 1.5;
 $header-line-height: 1.25;
@@ -69,8 +69,8 @@ header {
 }
 
 h1 {
-  font-size: 4em;
-  margin: 0.5em 0em;
+  font-size: 4rem;
+  margin: 0.5rem 0rem;
 }
 
 
@@ -86,8 +86,8 @@ h1 {
     position: absolute;
     bottom: 0;
     width: 100%;
-    margin: 0.5em 0 0 0;
-    padding: 0.625em 1em 0.375em 1em;
+    margin: 0.5rem 0 0 0;
+    padding: 0.625rem 1rem 0.375rem 1rem;
     color: white;
     background: rgba(0,0,0,0.4);
   }
@@ -138,50 +138,50 @@ h1 {
 
 @media all and (min-width: 961px) {
   .everything {
-    width: 60em;
+    width: 60rem;
   }
   .thumbnail {
-    width: 15em;
-    height: 15em;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
 @media all and (min-width: 721px) and (max-width: 960px) {
   .everything {
-    width: 45em;
+    width: 45rem;
   }
   .thumbnail {
-    width: 15em;
-    height: 15em;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
 @media all and (min-width: 641px) and (max-width: 720px) {
   .everything {
-    width: 36em;
+    width: 36rem;
   }
   .thumbnail {
-    width: 12em;
-    height: 12em;
+    width: 12rem;
+    height: 12rem;
   }
 }
 
 @media all and (min-width: 481px) and (max-width: 640px) {
   .everything {
-    width: 30em;
+    width: 30rem;
   }
   .thumbnail {
-    width: 15em;
-    height: 15em;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
 @media all and (min-width: 321px) and (max-width: 480px) {
   .everything {
-    width: 20em;
+    width: 20rem;
   }
   .thumbnail {
-    width: 10em;
-    height: 10em;
+    width: 10rem;
+    height: 10rem;
   }
 }
