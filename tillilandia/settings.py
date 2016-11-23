@@ -1,8 +1,14 @@
 import os
+import environ
 from json import JSONEncoder
 from uuid import UUID
 
+# Load env vars from .env
+root = environ.Path(__file__) - 2
+env = environ.Env(DEV=(bool, False))
+environ.Env.read_env(str(root) + '/.env')
 
+# Monkeypatch the JSONEncoder to deal with serializing UUIDs
 JSONEncoder_olddefault = JSONEncoder.default
 
 
@@ -17,9 +23,9 @@ JSONEncoder.default = JSONEncoder_newdefault
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = '4v0p$z492r(vty53s#eadgpe968kuxtanu+jxnnuc4ix$4)$0l'
+SECRET_KEY = env('SECRET_KEY')
 
-DEBUG = True
+DEBUG = env('DEV')
 
 ALLOWED_HOSTS = []
 
@@ -64,6 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tillilandia.wsgi.application'
 
+# TODO move DB config to .env and maybe add a postgres example
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

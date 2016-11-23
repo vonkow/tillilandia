@@ -1,5 +1,7 @@
 Django==1.10.3
+django-environ==0.4.1
 django-versatileimagefield==1.6.1
 djangorestframework==3.5.3
 Pillow==3.3.3
 simplejson==3.10.0
+six==1.10.0
