@@ -2,7 +2,7 @@ import React from 'react'
 import {observer} from 'mobx-react'
 
 @observer(['actions', 'state'])
-export default class About extends React.Component {
+export default class AboutSite extends React.Component {
 
   render () {
     return (

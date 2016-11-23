@@ -1,5 +1,6 @@
 import React from 'react'
 import {observer} from 'mobx-react'
+import {Link} from 'react-router'
 import {find} from 'lodash'
 
 @observer(['actions', 'state'])
@@ -23,6 +24,7 @@ export default class TillyCard extends React.Component {
           <div className="img-wrap">
             <img src={tilly.pics[0].image}/>
           </div>
+          <Link to="/" className="back">&lt;&lt;&lt;</Link>
         </div>
       )
     }

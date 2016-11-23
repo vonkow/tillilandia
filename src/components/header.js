@@ -10,7 +10,7 @@ export default class Header extends React.Component {
       <header>
         <h1>Tillandsias</h1>
         <h3>
-          <Link to="about">
+          <Link to="pages">
             What?
           </Link>
         </h3>
