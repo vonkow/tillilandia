@@ -1,10 +1,17 @@
 from rest_framework import viewsets
 from rest_framework.pagination import LimitOffsetPagination
 
-from .models import Species, Tillandsia, TillyPic
+from .models import Shop, Species, Tillandsia, TillyPic
 
 from .serializers import (
-    SpeciesSerializer, TillandsiaSerializer, TillyPicSerializer)
+    ShopSerializer, SpeciesSerializer, TillandsiaSerializer, TillyPicSerializer
+)
+
+
+class ShopViewSet(viewsets.ModelViewSet):
+    queryset = Shop.objects.all()
+    serializer_class = ShopSerializer
+    pagination_class = LimitOffsetPagination
 
 
 class SpeciesViewSet(viewsets.ModelViewSet):

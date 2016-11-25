@@ -1,7 +1,17 @@
 from rest_framework import serializers
 from versatileimagefield.serializers import VersatileImageFieldSerializer
 
-from .models import Species, Tillandsia, TillyPic
+from .models import Shop, Species, Tillandsia, TillyPic
+
+
+class ShopSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Shop
+        fields = (
+            'id', 'name', 'create_date', 'update_date', 'description',
+            'website'
+        )
 
 
 class SpeciesSerializer(serializers.ModelSerializer):
@@ -21,6 +31,7 @@ class TillyPicSerializer(serializers.ModelSerializer):
 
 
 class TillandsiaSerializer(serializers.ModelSerializer):
+    shop = ShopSerializer(required=False)
     pics = TillyPicSerializer(source='tillypic_set', many=True, required=False)
     species = serializers.StringRelatedField()
 
@@ -28,5 +39,5 @@ class TillandsiaSerializer(serializers.ModelSerializer):
         model = Tillandsia
         fields = (
             'id', 'create_date', 'update_date',
-            'name', 'species', 'description', 'pics'
+            'name', 'species', 'description', 'pics', 'shop'
         )

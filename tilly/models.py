@@ -17,26 +17,32 @@ class BaseModel(models.Model):
         abstract = True
 
 
-class Species(BaseModel):
+class NamedModel(BaseModel):
     name = models.CharField(max_length=255)
 
     class Meta:
+        abstract = True
         ordering = ['name']
 
     def __str__(self):
         return self.name
 
 
-class Tillandsia(BaseModel):
+class Shop(NamedModel):
+    description = models.TextField(default='')
+    website = models.URLField(null=True, blank=True)
+    # TODO location
+
+
+class Species(NamedModel):
+    description = models.TextField(default='')
+
+
+class Tillandsia(NamedModel):
     name = models.CharField(max_length=255)
     species = models.ForeignKey(Species, null=True, blank=True)
     description = models.TextField(default='')
-
-    class Meta:
-        ordering = ['name']
-
-    def __str__(self):
-        return self.name
+    shop = models.ForeignKey(Shop, null=True, blank=True)
 
 
 class TillyPic(BaseModel):
